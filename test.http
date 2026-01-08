@@ -1,0 +1,6 @@
+POST http://localhost/ADRESS_API/api.php
+Content-Type: application/json
+
+{
+    "text_input": "Emily Johnson 1284 Pine Street, Apt 12 San Francisco, CA 94109 United States"
+}
