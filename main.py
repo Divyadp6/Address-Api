@@ -15,7 +15,7 @@ class Address(BaseModel):
     state: Optional[str] = Field(default="N/A", description="State or region")
     zip_code: Optional[str] = Field(default="N/A", description="Postal or Zip code")
 
-def extract_with_better_prompt(text_input: str):
+def extract_address(text_input: str):
     system_instruction = (
         "You are an expert at parsing messy text into clean addresses. "
         "Extract every complete mailing address found. "
@@ -37,7 +37,7 @@ def extract_with_better_prompt(text_input: str):
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         input_data = sys.argv[1]
-        print(extract_with_better_prompt(input_data))
+        print(extract_address(input_data))
 
 
 
