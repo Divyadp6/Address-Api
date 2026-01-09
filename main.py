@@ -6,7 +6,7 @@ from google import genai
 from google.genai import types
 
 
-client = genai.Client(api_key="AIzaSyAxZMiqTnU4hHWmkJ8UqpOKkKYCy0KR_rM")
+client = genai.Client(api_key="google_api_key")
 class Address(BaseModel):
     Country: Optional[str] = Field(default="N/A", description="Country name")
     street: Optional[str] = Field(default="N/A", description="Street or house info")
